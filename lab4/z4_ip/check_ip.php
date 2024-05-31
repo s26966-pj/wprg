@@ -1,6 +1,6 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-$privileged = file('ip.txt',FILE_IGNORE_NEW_LINES);
+$privileged = file('ip.txt', FILE_IGNORE_NEW_LINES);
 foreach($privileged as $ip) {
     echo $ip;
 }

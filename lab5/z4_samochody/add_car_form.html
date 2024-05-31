@@ -1,0 +1,21 @@
+<h1>Dodaj samochód</h1>
+<div class="form">
+    <form action="add_car.php" method="post">
+        <label for="marka">Marka:</label>
+        <input type="text" name="marka" required><br><br>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required><br><br>
+
+        <label for="cena">Cena:</label>
+        <input type="number" step="0.01" id="cena" name="cena" required><br><br>
+
+        <label for="rok">Rok:</label>
+        <input type="number" id="rok" name="rok" required><br><br>
+
+        <label for="opis">Opis:</label>
+        <textarea id="opis" name="opis"></textarea><br><br>
+
+        <input type="submit" value="Dodaj">
+    </form>
+</div>

@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Calc</title>
+    <title>calc</title>
 </head>
 <body>
     <form method="post">
