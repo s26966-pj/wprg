@@ -1,0 +1,40 @@
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10,2) NOT NULL,
+    category ENUM('spodnie', 'obuwie', 'koszulki', 'akcesoria', 'kurtki') NOT NULL,
+    quantity INT NOT NULL
+);
+
+INSERT INTO products (name, description, price, category, quantity)
+VALUES
+    ('Jeansy slim-fit', 'Męskie jeansy wąskie, materiał denim', 69.99, 'spodnie', 50),
+    ('Buty skórzane', 'Męskie buty skórzane, kolor brązowy', 129.95, 'obuwie', 30),
+    ('Koszulka polo', 'Koszulka polo z krótkim rękawem, kolor niebieski', 24.99, 'koszulki', 80),
+    ('Pasek skórzany', 'Pasek skórzany, kolor czarny', 19.50, 'akcesoria', 60),
+    ('Kurtka przeciwdeszczowa', 'Kurtka przeciwdeszczowa, kolor szary', 89.95, 'kurtki', 20),
+    ('Spodnie chino', 'Męskie spodnie chino, kolor khaki', 59.99, 'spodnie', 40),
+    ('Trampki sportowe', 'Męskie trampki sportowe, materiał tekstylny', 49.95, 'obuwie', 25),
+    ('T-shirt basic', 'Podstawowy t-shirt z krótkim rękawem, kolor biały', 14.99, 'koszulki', 100),
+    ('Zegarek męski', 'Zegarek męski na bransolecie, kolor srebrny', 79.00, 'akcesoria', 50),
+    ('Kurtka bomberka', 'Kurtka bomberka, kolor oliwkowy', 79.99, 'kurtki', 15),
+    ('Jeansy regular-fit', 'Męskie jeansy regularne, materiał denim', 59.50, 'spodnie', 35),
+    ('Buty sportowe', 'Męskie buty sportowe, kolor czarny', 89.95, 'obuwie', 30),
+    ('Koszulka z nadrukiem', 'Koszulka z nadrukiem, kolor szary', 19.99, 'koszulki', 70),
+    ('Portfel skórzany', 'Portfel męski z naturalnej skóry, kolor brązowy', 39.95, 'akcesoria', 45),
+    ('Kurtka pikowana', 'Kurtka pikowana, kolor granatowy', 99.95, 'kurtki', 25),
+    ('Spodnie dresowe', 'Męskie spodnie dresowe, kolor ciemnoszary', 34.50, 'spodnie', 50),
+    ('Buty trekkingowe', 'Męskie buty trekkingowe, kolor grafitowy', 119.00, 'obuwie', 20),
+    ('Koszulka polo slim-fit', 'Koszulka polo slim-fit, kolor czerwony', 29.99, 'koszulki', 60),
+    ('Okulary przeciwsłoneczne', 'Okulary przeciwsłoneczne męskie, kolor czarny', 59.50, 'akcesoria', 40),
+    ('Płaszcz wełniany', 'Płaszcz wełniany, kolor szary', 149.99, 'kurtki', 18),
+    ('Szorty plażowe', 'Męskie szorty plażowe, wzór w paski', 24.95, 'spodnie', 40),
+    ('Mokasyny skórzane', 'Męskie mokasyny skórzane, kolor brązowy', 79.50, 'obuwie', 25),
+    ('Koszulka V-neck', 'Koszulka V-neck, kolor granatowy', 17.99, 'koszulki', 80),
+    ('Plecak miejski', 'Plecak miejski na laptopa, kolor czarny', 69.95, 'akcesoria', 30),
+    ('Płaszcz zimowy', 'Płaszcz zimowy ocieplany, kolor czarny', 199.95, 'kurtki', 15),
+    ('Joggersy', 'Męskie joggersy, kolor szary', 44.99, 'spodnie', 30),
+    ('Sandaly męskie', 'Męskie sandały skórzane, kolor brązowy', 54.50, 'obuwie', 35),
+    ('Koszula flanelowa', 'Koszula flanelowa, kolor czerwony', 39.50, 'koszulki', 55),
+    ('Kurtka skórzana', 'Kurtka skórzana, kolor czarny', 179.99, 'kurtki', 20);
